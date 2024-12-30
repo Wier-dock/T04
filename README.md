@@ -129,3 +129,46 @@ int main() {
 
     return 0;
 }
+
+# 4
+
+## Добавляю библиотеку
+```bsah
+#include <stdio.h>
+```
+## Показываю функцию и аргументы
+```bsah
+int main() {
+```
+```bsah
+    int num1, num2;
+```
+## Ввод в консоль    
+```bsah
+    printf("Введите первое число: ");
+    scanf("%d", &num1);
+```
+```bsah
+    printf("Введите второе число: ");
+    scanf("%d", &num2);
+```
+## Тернантный оператор
+```bsah
+    int result = num1 > num2 ? 1 : num1 == num2 ? 0 : -1;
+```
+## Использую функции
+```bash
+    if (result == 1) {
+        printf("Первое число больше второго.\n");
+```
+```bsah
+    } else if (result == 0) {
+        printf("Числа равны.\n");
+```
+```bsah
+    } else {
+        printf("Первое число меньше второго.\n");
+    }
+```
+    return 0;
+}
