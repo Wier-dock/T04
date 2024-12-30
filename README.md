@@ -84,3 +84,48 @@ int main() {
 ```
     return 0;
 }
+
+
+# 3
+
+## Добавляю библиотеку
+```bash
+#include <stdio.h>
+```
+## Показываю функцию и аргументы
+```bash
+int main() {
+```
+```bash
+    int number;
+```
+## Ввод в консоль
+```bash
+    printf("Введите число от 1 до 100: ");
+    scanf("%d", &number);
+```
+## Использую функции
+```bash
+    if (number >= 1 && number <= 100) {
+```
+```bash
+        if (number == 50) {
+            printf("Число равно 50.\n");
+```
+```bash
+        } else if (number > 50) {
+            printf("Число больше 50.\n");
+```
+```bash
+        } else {
+            printf("Число меньше 50.\n");
+```
+     }
+```bsah
+    } else {
+        printf("Вы ввели неверное число. Число должно быть от 1 до 100.\n");
+    }
+```
+
+    return 0;
+}
