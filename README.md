@@ -233,3 +233,75 @@ int main() {
 ```
     return 0;
 }
+
+# 7
+## Добавляю библиотеку
+```bash
+include <stdio.h>
+```
+## Показываю функцию и аргументы
+```bash
+int main() {
+```
+```bash
+    int number = 0;
+```
+```bash	
+    int sum = 0;
+```
+```bash
+    int count = 0;
+```
+```bash
+    char answer;
+```
+## Использую цикл
+```bash
+    printf("Введите числа (для завершения введите 'y' или 'Y'): ");
+```
+```bash
+    while (scanf("%d", & number) == 1) {
+```
+```bash
+        sum += number;
+```
+```bash
+        count++;
+```
+## Ввод в консоль
+```bash
+        printf("Продолжить ввод (y/Y)? ");
+        scanf(" %c", &answer);
+```
+## Использую функции
+```bash
+        if (answer == 'y' || answer == 'Y') {
+```
+```bash
+            continue;
+```
+```bash
+        } else {
+```
+```bash
+            break;
+```
+        }
+    }
+## Использую функции
+```bash
+    if (count > 0) {
+        double average = (double)sum / count;
+```
+```bash
+        printf("Сумма введенных чисел: %d\n", sum);
+        printf("Среднее арифметическое: %.2f\n", average);
+```
+```bash
+    } else {
+        printf("Вы не ввели ни одного числа.\n");
+```
+    }
+
+    return 0;
+} 
