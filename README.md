@@ -149,7 +149,7 @@ int main() {
 # Седьмая задач
 ```c
 ## Добавляю библиотеку
-include <stdio.h>
+#include <stdio.h>
 ## Показываю функцию и аргументы
 int main() {
     int number = 0;
